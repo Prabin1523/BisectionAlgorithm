@@ -63,36 +63,35 @@ namespace BisectionAlgorithmHumanPlays
                 {
                     try
                     {
-                        Console.WriteLine("Computer select a number from 1 and 10 ");
+                        Console.WriteLine("Computer select a number from 1 and 1000 ");
                         Random rando = new Random();
                         int firstGuess = rando.Next(1, 1000);
-                        Console.Clear();
+                        
 
                         {
                             Console.WriteLine("First Guess is: " + firstGuess);
                             if (firstGuess == mySecretNo)
                             {
                                 Console.WriteLine("You guessed the number!");
-                                //run = true;
+                                run = true;
                             }
 
                             else if (firstGuess > mySecretNo)
                             {
                                 Console.WriteLine("Your guess was too high!");
                                 Console.WriteLine("Select a number from 1 and " + firstGuess);
-
-
-                                Random secondrando = new Random();
-                                int secondGuess = secondrando.Next(1, firstGuess);
+                                //Random secondrando = new Random();
+                                //int secondGuess = secondrando.Next(1, firstGuess);
                             }
 
                             else if (firstGuess < mySecretNo)
                             {
                                 Console.WriteLine("Your guess was too low! ");
                                 Console.WriteLine("Select a numer from 1000 and " + firstGuess);
-                                Random secondrando = new Random();
-                                int secondGuess = secondrando.Next(1000, firstGuess);
+                                //Random secondrando = new Random();
+                                //int secondGuess = secondrando.Next(firstGuess, 1000);
                             }
+
                         }
 
                         
