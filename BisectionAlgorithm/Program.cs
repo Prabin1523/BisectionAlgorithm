@@ -56,10 +56,10 @@ namespace BisectionAlgorithmHumanPlays
             if(userInput == 2)
             {
 
-                int mySecretNo = 3;
+                int mySecretNo = 450;
 
-                //bool run = false;
-                //while (!run)
+                bool run = false;
+                while (!run)
                 {
                     try
                     {
@@ -79,7 +79,7 @@ namespace BisectionAlgorithmHumanPlays
                             else if (firstGuess > mySecretNo)
                             {
                                 Console.WriteLine("Your guess was too high!");
-                                Console.WriteLine("Select a number between 1 and " + firstGuess);
+                                Console.WriteLine("Select a number from 1 and " + firstGuess);
 
 
                                 Random secondrando = new Random();
@@ -89,7 +89,7 @@ namespace BisectionAlgorithmHumanPlays
                             else if (firstGuess < mySecretNo)
                             {
                                 Console.WriteLine("Your guess was too low! ");
-                                Console.WriteLine("Select a number between 5 and " + firstGuess);
+                                Console.WriteLine("Select a numer from 1000 and " + firstGuess);
                                 Random secondrando = new Random();
                                 int secondGuess = secondrando.Next(1000, firstGuess);
                             }
@@ -105,33 +105,7 @@ namespace BisectionAlgorithmHumanPlays
                 }
 
 
-                //            Scanner in = new Scanner(System.in);
-                //            Random rand = new Random();
-                //            int randNum = 0;
-                //            int upperLimit = 100;
-                //            int lowerLimit = 1;
-                //            String myAnswer = "";
-
-                //            do
-                //            {
-                //                randNum = rand.nextInt(upperLimit - lowerLimit + 1) + lowerLimit;
-                //                System.out.println("I think it's " + randNum);
-                //                myAnswer = in.nextLine();
-
-                //                if (myAnswer.equals("tl"))
-                //                {  //too low
-                //                    lowerLimit = randNum + 1;
-                //                }
-                //                else if (myAnswer.equals("th"))
-                //                { // too high
-                //                    upperLimit = randNum - 1;
-                //                }
-                //            } while (!myAnswer.equals("y"));
-
-                //in.close();
-                //            System.out.println("YAAAY! :D");
-
-
+                
             }
 
 
